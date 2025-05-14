@@ -1,0 +1,53 @@
+def say_hello()
+    print("Hello, world!")
+
+    --------------------------------
+
+    --------------------------------
+
+    def divide(a, b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
+print("Result:", divide(10, 0))
+
+-----------------------------------------
+
+#include <iostream>
+#include <cstring>
+
+class MyString {
+private:
+    char* data;
+
+public:
+    MyString(const char* str) {
+        data = new char[strlen(str) + 1];
+        strcpy(data, str);
+    }
+
+    // ❌ Faulty Copy Constructor (leak if existing 'data' not deleted)
+    MyString(const MyString& other) {
+        data = new char[strlen(other.data) + 1];
+        strcpy(data, other.data);
+    }
+
+    ~MyString() {
+        delete[] data;
+    }
+
+    void print() const {
+        std::cout << data << std::endl;
+    }
+};
+
+int main() {
+    MyString a("Hello");
+    MyString b = a;  // invokes copy constructor
+
+    a.print();
+    b.print();
+
+    return 0;
+}

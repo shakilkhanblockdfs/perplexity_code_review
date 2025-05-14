@@ -1,2 +1,6 @@
-# Run this on Mac to serve it
-OLLAMA_HOST=0.0.0.0 ollama serve
+Refer the submission.md for the details of the project:
+
+
+Youtube Video Link:-
+https://www.youtube.com/watch?v=ZeyRSIMEQo8
+
