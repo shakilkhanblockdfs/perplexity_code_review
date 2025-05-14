@@ -1,0 +1,17 @@
+// This buggy code is for testing purpose and is deliberately added to repo for quick testing
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int* arr = new int[5]; // allocate space for 5 integers
+
+    // Intentional overflow: writing beyond the allocated size
+    for (int i = 0; i < 10; i++) {
+        arr[i] = i * 2; // writing into out-of-bounds memory when i >= 5
+        cout << "arr[" << i << "] = " << arr[i] << endl;
+    }
+
+    delete[] arr;
+    return 0;
+}
