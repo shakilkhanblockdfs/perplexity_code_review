@@ -1,0 +1,15 @@
+node_modules
+__pycache__/
+*.pyc
+*.venv
+.venv
+.chromadb
+.chroma_db
+.DS_Store
+*.DS_Store
+a.out
+a.out.dSYM
+
+reft_finetuning/reft_model
+reft_finetuning/results
+
