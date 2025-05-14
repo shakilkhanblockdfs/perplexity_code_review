@@ -52,3 +52,20 @@ https://www.youtube.com/watch?v=ZeyRSIMEQo8
 
 githublink:
 https://github.com/shakilkhanblockdfs/perplexity_code_review
+
+Why Code review with GenAI like Sonar LLM:-
+	Code reviews helps in Code Quality, Catching bugs and meeting coding standard.
+	Code reviews are rushed or skipped due to Manual effort.
+	Code reviews can be prone to error due to Human effort.
+	Different programming language requires different skills for code review.
+	GenAI helps in consistent code review.
+	Not prone to fatigue like Humans.
+	Code reviews are faster.
+	Coding standard check can be very effective.
+	Reviews pull request and add detailed summarization if configured.
+	Ensure that Keys and secret not part of Code check-in and flag it appropriately.
+	Provides a diff patch to be applied to fix all the issues.
+	Provides test cases to test new changes.
+	Add comments or docstring to code.
+	It can perform License check and provide feedback as to what license type the code follows.
+	Creates an Automatic  BOM(Bill of materials) for all the libraries and code used.
