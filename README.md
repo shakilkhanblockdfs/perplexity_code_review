@@ -22,8 +22,9 @@ just the perplexity API key is enough.
    ```bash
    cd perplexity_code_review/backend
    pip install ./requirements.txt         # For all the python related dependencies
+  ./install.sh  # Install nginx as reverse proxy on the Linux.
+                # If you use Mac for both backend and frontend you can skip this step of ./install.sh
    python3 ./server.py
-  ./install.sh  # Install nginx as reverse proxy
 
 
 🌐 Frontend
